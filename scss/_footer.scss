@@ -1,0 +1,20 @@
+footer {
+   background: whitesmoke;
+   color: black;
+   height: 80vh;
+   h1 {
+      background-image: url(https://media.giphy.com/media/F3LwChPI2Zj9OweyWz/giphy.gif);
+      background-size: cover;
+      background-position-y: 80%;
+      color: transparent;
+      -moz-background-clip: text;
+      -webkit-background-clip: text;
+   }
+}
+
+// @keyframes spin {
+//    0% {transition}
+//    20% {opacity:1;}
+//    80% {opacity:1}
+//    100% {opacity:0;}
+// }

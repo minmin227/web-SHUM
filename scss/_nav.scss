@@ -1,0 +1,64 @@
+.nav-logo {
+    display: flex;
+    justify-content: space-between;
+    background: transparent;
+    color: black;
+    width: 100vw;
+    padding: 1rem;
+    position: fixed;
+    z-index: 999;
+
+    .logo {
+        flex-basis: 20%;
+        justify-content: start;
+        padding: 0.5rem;
+        margin-left: 1rem;
+    }
+
+    .containerNav {
+        flex-basis: 70%;
+        color: black;
+        margin: 0 auto;
+        display: flex;
+        justify-content: flex-end;
+        font-size: 2rem;
+
+        // border-bottom: 1px solid lightgray;
+        a {
+            text-decoration: none;
+            position: relative;
+            z-index: 0;
+            cursor: pointer;
+            margin: 1rem;
+            padding: 0.5rem;
+            font-weight: bold;
+        }
+    }
+}
+
+.containerNav.borderXwidth a:before,
+.containerNav.borderXwidth a:after {
+    position: absolute;
+    opacity: 0;
+    width: 0%;
+    height: 3px;
+    content: '';
+    background: black;
+    transition: all 0.5s;
+}
+
+.containerNav.borderXwidth a:before {
+    left: 0rem;
+    top: 0rem;
+}
+
+.containerNav.borderXwidth a:after {
+    right: 0rem;
+    bottom: 0rem;
+}
+
+.containerNav.borderXwidth a:hover:before,
+.containerNav.borderXwidth a:hover:after {
+    opacity: 1;
+    width: 100%;
+}
